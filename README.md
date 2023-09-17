@@ -1,60 +1,27 @@
-# Web Crawler Application
+# WebScraperFrontend
 
-This is a simple Angular application that allows users to crawl websites by providing a URL and depth. The application also has an optional feature that allows users to rerun the crawler for the same URL.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
-## Getting Started
+## Development server
 
-To run this application locally, you need to have Node.js and npm (Node Package Manager) installed on your system. If you don't have them, you can download and install them from [Node.js official website](https://nodejs.org/).
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-### Prerequisites
+## Code scaffolding
 
-Before running the application, you need to install the required dependencies. Open a terminal/command prompt, navigate to the project's root directory, and run the following command:
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-```bash
-npm install
+## Build
 
-# Web Crawler Application
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-This is a simple Angular application that allows users to crawl websites by providing a URL and depth. The application also has an optional feature that allows users to rerun the crawler for the same URL.
+## Running unit tests
 
-## Getting Started
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-To run this application locally, you need to have Node.js and npm (Node Package Manager) installed on your system. If you don't have them, you can download and install them from [Node.js official website](https://nodejs.org/).
+## Running end-to-end tests
 
-### Prerequisites
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-Before running the application, you need to install the required dependencies. Open a terminal/command prompt, navigate to the project's root directory, and run the following command:
+## Further help
 
-```bash
-npm install
-Running the Application
-Once the dependencies are installed, you can start the application by running:
-
-bash
-Copy code
-ng serve
-This will compile the application and make it available at http://localhost:4200/. Open your web browser and navigate to this URL to use the application.
-
-Usage
-Launch the application by following the instructions in the "Running the Application" section.
-
-On the application's homepage, you'll find input fields for entering a URL and depth.
-
-Enter the URL of the website you want to crawl into the "URL" input field.
-
-Enter the depth to control how many levels deep you want to crawl.
-
-Optionally, check the "Crawl again" checkbox if you want to rerun the crawler for the same URL.
-
-Click the "Crawl" button to initiate the crawler.
-
-If the URL is already present in the database, the application will retrieve it; otherwise, it will initiate the crawler.
-
-Extra Feature
-This application also includes a bonus feature that allows you to rerun the crawler for the same URL. Simply check the "Crawl again" checkbox before clicking the "Crawl" button.
-
-Note
-This application utilizes the SweetAlert2 package for error handling, ensuring that users receive concise and informative error messages. This helps users quickly understand and address any issues they encounter, improving the overall user experience, and angular input validation as well.
-
-
-Happy crawling!
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

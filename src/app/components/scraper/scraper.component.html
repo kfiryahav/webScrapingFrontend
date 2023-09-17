@@ -1,0 +1,45 @@
+<div class="container mt-5 rounded shadow p-4">
+    <h2>Web Crawler</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="url" class="m-1">URL:</label>
+            <input type="text" class="form-control" id="url" name="url" [(ngModel)]="url" placeholder="Enter URL"
+                required>
+            <small *ngIf="formSubmitted && !url" class="text-danger">
+                URL is required.
+            </small>
+        </div>
+        <div class="form-group">
+            <label for="depth" class="m-1">Depth:</label>
+            <input type="number" class="form-control" name="depth" id="depth" [(ngModel)]="depth"
+                placeholder="Enter Depth">
+            <small *ngIf="formSubmitted && depth === null" class="text-danger">
+                Depth is required.
+            </small>
+        </div>
+
+        <div class="mb-3 form-check mt-1">
+            <input type="checkbox" class="form-check-input" name="crawl_again" [(ngModel)]="crawl_again">
+            <label class="form-check-label" for="exampleCheck1">Crawl again</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-2">Crawl</button>
+    </form>
+
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th scope="col">URL</th>
+                <th scope="col">Crawled at</th>
+                <th scope="col">Depth</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ urlResult.url }}</td>
+                <td>{{ urlResult.scrawled_at }}</td>
+                <td>{{ urlResult.depth }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
