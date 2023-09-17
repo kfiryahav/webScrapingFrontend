@@ -6,12 +6,13 @@ This is a simple Angular application that allows users to crawl websites by prov
 
 To run this application locally, you need to have Node.js and npm (Node Package Manager) installed on your system. If you don't have them, you can download and install them from the [Node.js official website](https://nodejs.org/).
 
-### Prerequisites
+## Prerequisites
 
 Before running the application, you need to install the required dependencies. Open a terminal/command prompt, navigate to the project's root directory, and run the following command:
 
 ```bash
 npm install
+```
 
 ## Running the Application
 ng serve
